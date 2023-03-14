@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms'
 import { ReactiveFormsModule } from '@angular/forms';
 import {DropdownModule} from 'primeng/dropdown';
 import {CheckboxModule} from 'primeng/checkbox';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -30,7 +31,8 @@ import {CheckboxModule} from 'primeng/checkbox';
     FormsModule,
     ReactiveFormsModule,
     DropdownModule,
-    CheckboxModule
+    CheckboxModule,
+    BrowserAnimationsModule
     
   ],
   exports: [

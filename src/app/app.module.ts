@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserdetailsModule } from './userdetails/userdetails.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -15,8 +15,7 @@ import { UserdetailsModule } from './userdetails/userdetails.module';
     BrowserModule,
     AppRoutingModule,
     UserdetailsModule,
-    
-    
+    BrowserAnimationsModule
     
   ],
   providers: [],

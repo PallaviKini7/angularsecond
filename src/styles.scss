@@ -17,3 +17,11 @@
     /* padding: 2% 0%; */
     padding-top: 4%;
 }
+.p-dropdown {
+    background: #ffffff;
+    border: 1px solid #a6a6a6;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    border-radius: 3px;
+    width: 100%;
+    text-align: left;
+}
