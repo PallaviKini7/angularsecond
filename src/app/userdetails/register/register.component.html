@@ -1,0 +1,89 @@
+<div class="loginContainer">
+    <div class="loginRect">
+        <p-card class="card">
+            <ng-template pTemplate="header">
+                REGISTER
+            </ng-template>
+            <form [formGroup]="loginForm">
+
+                <div class="loginInput">
+
+                    <span class="p-float-label" style="width: 100%; ;">
+                        <input id="float-input" type="text" pInputText style="width: 100%;height: 40px ;"
+                            formControlName="username">
+
+                        <span class="error"
+                            *ngIf="loginForm.get('username').hasError('minLength') && loginForm.get('username').touched">This
+                            is a </span>
+                        <span class="error"
+                            *ngIf="loginForm.get('username').hasError('maxlength') && loginForm.get('username').touched">This
+                            is</span>
+                        <label for="float-input">User Name</label>
+
+                    </span>
+
+                </div>
+                <div class="loginInput">
+
+                    <span class="p-float-label" style="width: 100%; ;">
+                        <input id="float-input" type="email" pInputText style="width: 100%;height: 40px ;"
+                            formControlName="email">
+
+                        <span class="error"
+                            *ngIf="loginForm.get('username').hasError('minLength') && loginForm.get('username').touched">This
+                            is a </span>
+                        
+                        <label for="float-input">Email</label>
+
+                    </span>
+
+                </div>
+                <div class="loginInput">
+                    <span class="p-float-label" style="width: 100%;">
+                        <input id="float-input" type="password" pInputText style="width: 100%; height: 40px"
+                            formControlName="password">
+                        <span class="error"
+                            *ngIf="loginForm.get('password').hasError('pattern') && loginForm.get('password').touched">This
+                            is a required field</span>
+
+                        <label for="float-input">Password</label>
+                    </span>
+
+                </div>
+                <div class="loginInput">
+                    <span class="p-float-label" style="width: 100%;">
+                        <input id="float-input" type="password" pInputText style="width: 100%; height: 40px"
+                            formControlName="password">
+                        <span class="error"
+                            *ngIf="loginForm.get('password').hasError('pattern') && loginForm.get('password').touched">This
+                            is a required field</span>
+
+                        <label for="float-input">Confirm Password</label>
+                    </span>
+
+                </div>
+
+                
+
+
+                <div class="loginInput">
+                    <button pButton type="button" class="p-button-raised p-button-rounded" (click)="submitLogin()"
+                        [disabled]="!loginForm.valid">Submit</button>
+
+                </div>
+                <div class="bottomContainer">
+                    <div>Existing user </div>
+                    <div class="nav-link" routerLink="" routerLinkActive="active">Login here</div>
+                    <div class="nav-link" routerLink="profile" routerLinkActive="active">click here</div>
+
+                </div>
+
+            </form>
+
+            
+        </p-card>
+       
+
+    </div>
+
+</div>
